@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Planner</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+
+<body>
+    <div class="main">
+        <nav>
+            <h1>STUDENT PLANNER</h1>
+        </nav>
+        <div class="subMain">
+            <div class="clockAndTime">
+                <div class="clock">
+
+                    <div class="clockbox">
+                        <h2 id="hours">00</h2>
+                        <p>HOURS</p>
+                    </div>
+
+                    <div class="clockbox">
+                        <h2 id="minutes">00</h2>
+                        <p>MINUTES</p>
+                    </div>
+
+                </div>
+                <div class="calendar">
+                    <div class="header">
+                        <button id="prev">◀</button>
+                        <h2 id="monthYear"></h2>
+                        <button id="next">▶</button>
+                    </div>
+                    <div class="days">
+                        <div>Sun</div>
+                        <div>Mon</div>
+                        <div>Tue</div>
+                        <div>Wed</div>
+                        <div>Thu</div>
+                        <div>Fri</div>
+                        <div>Sat</div>
+                    </div>
+                    <div class="dates" id="dates"></div>
+                </div>
+            </div>
+            <div class="subjects">
+                <h2>Subjects</h2>
+                <hr>
+                <div class="boxes">
+                    <div class="box" data-subject="maths">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8_yeX1IMw45Y2WEwH6DUgJ4xm9JYctIUGPg&s"
+                            alt="">
+                        <h3>Maths</h3>
+                        <p class="counter">Tasks: 0/0</p>
+                    </div>
+                    <div class="box" data-subject="physics">
+                        <img src="https://www.shutterstock.com/image-vector/physics-doodles-lettering-on-white-260nw-2665808711.jpg"
+                            alt="">
+                        <h3>Physics</h3>
+                        <p class="counter">Tasks: 0/0</p>
+                    </div>
+                    <div class="box" data-subject="chemistry">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj3iIyirTq1cCdWCboFMmVJk8Hp5QDK66W4Q&s"
+                            alt="">
+                        <h3>Chemistry</h3>
+                        <p class="counter">Tasks: 0/0</p>
+                    </div>
+                    <div class="box" data-subject="english">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR78nbZLm_o2SS7Fu0hUocd3VuRtFypedUxQ&s"
+                            alt="">
+                        <h3>English</h3>
+                        <p class="counter">Tasks: 0/0</p>
+                    </div>
+                    <div class="box" data-subject="hindi">
+                        <img src="Assets/hin.jfif" alt="">
+                        <h3>Hindi</h3>
+                        <p class="counter">Tasks: 0/0</p>
+                    </div>
+                    <div class="box" data-subject="it">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSdtbb0-bXXTWIcdLwY-8KBFEOA0dtaLSTSA&s"
+                            alt="">
+                        <h3>IT</h3>
+                        <p class="counter">Tasks: 0/0</p>
+                    </div>
+                </div>
+            </div>
+            <div class="timerAndLinks">
+                <div class="timer">
+                    <h2>Timer</h2>
+                    <hr>
+                    <h1>00:00</h1>
+                    <div class="buttons">
+                        <img src="Assets/play-svgrepo-com.svg" alt="" id="play">
+                        <img src="Assets/pause-svgrepo-com.svg" alt="" id="pause">
+                        <img src="Assets/retry-svgrepo-com.svg" alt="" id="restart">
+                    </div>
+                </div>
+                <div class="links">
+                    <h2>Links</h2>
+                    <hr>
+                    <div class="link-input">
+                        <input id="linkLabel" type="text" placeholder="Label (e.g. YouTube)" />
+                        <input id="linkUrl" type="url" placeholder="https://" />
+                        <button id="addLink">Add</button>
+                    </div>
+                    <ul id="linksList"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popupBox">
+        <div class="header">
+            <h2>Tasks</h2>
+            <hr>
+            <div class="close">❌</div>
+        </div>
+        <ul id="notes"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
